@@ -4,7 +4,7 @@ Snippet`s for Visual Studio
 Instal "Snipet Designer" and add snippets
 
 From Visual Studio 2017 go to
-> Tools <  
+Tools
 ->
 > Extensions and updates... <
 ->
