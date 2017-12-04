@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>StopWatch</Title>
+      <Author>[USERNAME]</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>stopwatch</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>stopWatch</ID>
+          <ToolTip>stopWatch</ToolTip>
+          <Default>stopWatch</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[Stopwatch $stopWatch$ = new Stopwatch();
+            $stopWatch$.Start();
+
+            $stopWatch$.Stop();
+            Console.WriteLine($$"Processor ticks:{$stopWatch$}" 
+                + "\r\n" 
+                + $$"Used miliseconds:{$stopWatch$.ElapsedMilliseconds}");
+$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
