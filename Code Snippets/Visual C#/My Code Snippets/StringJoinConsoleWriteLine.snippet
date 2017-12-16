@@ -5,28 +5,32 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>ListDoubleRead</Title>
+      <Title>StringJoinConsoleWriteLine</Title>
       <Author>[USERNAME]</Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>ldr</Shortcut>
+      <Shortcut>sj</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>readNumbers</ID>
-          <ToolTip>readNumbers</ToolTip>
-          <Default>readNumbers</Default>
+          <ID>firstRow</ID>
+          <ToolTip>firstRow</ToolTip>
+          <Default>firstRow</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>ArrayName</ID>
+          <ToolTip>ArrayName</ToolTip>
+          <Default>ArrayName</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[var $readNumbers$ = Console.ReadLine()
-                .Split(new char[] {' '},StringSplitOptions.RemoveEmptyEntries)
-                .Select(double.Parse)
-                .ToList();
+      <Code Language="csharp" Delimiter="$"><![CDATA[Console.WriteLine(string.Join(", ", $ArrayName$));
 $end$]]></Code>
     </Snippet>
   </CodeSnippet>

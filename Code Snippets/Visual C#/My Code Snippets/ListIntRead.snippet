@@ -23,7 +23,7 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[List<int> $readNumbers$ = Console.ReadLine()
+      <Code Language="csharp" Delimiter="$"><![CDATA[var $readNumbers$ = Console.ReadLine()
                 .Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
                 .ToList();
